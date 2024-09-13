@@ -3,7 +3,7 @@ import { MovingBorderBtn } from '@/components/ui/moving-border'
 import Link from 'next/link'
 import React from 'react'
 import Title from './Title'
-import Spline from '@splinetool/react-spline';
+
 
 
 export default function HeroSection() {
@@ -20,18 +20,30 @@ export default function HeroSection() {
             </Link>
             </div>
             
-            {/* These are the figures */}
-            <div className='relative -z-40'>
-                <div className='flex items-center justify-center h-40 w-40'>
-                  
-                    <Spline scene="https://prod.spline.design/o8UfaMf5tMgg0Eat/scene.splinecode" className='w-full flex scale-[.25] sm:scale-[.35] lg:scale-[.5] lg:-translate-x-60 md:-translate-x-44 items-center justify-center md:justify-start'/>
-                    {/* Glow Light */}
-                    <div className='glow absolute top-[40%] right-1/2 -z-10'></div>
-                  
-                </div>
-                
-                
+            <div className='relative'>
+            
+            <div className="w-72 h-72 space-y-3 -rotate-[30deg] relative">
+            <div className="flex gap-3 translate-x-8">
+              <div className="w-32 h-32 rounded-2xl bg-green-500"></div>
+              <div className="w-32 h-32 rounded-full bg-indigo-500"></div>
+            </div>
+  
+            <div className="flex gap-3 -translate-x-8">
+              <div className="w-32 h-32 rounded-2xl bg-indigo-500"></div>
+              <div className="w-32 h-32 rounded-full bg-green-500"></div>
+            </div>
 
+            <div className="glow absolute top-[40%] right-1/2 -z-10"></div>
+            </div>
+            
+            <div className='absolute bottom-5 sm:bottom-14 left-0 sm:-left-10'>
+            <MovingBorderBtn 
+            borderRadius='0.5rem'
+            className='p-3 font-semibold'>
+                <p>🚀 Available for work</p>
+
+            </MovingBorderBtn>
+            </div>
             </div>
     </div>
   )

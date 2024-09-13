@@ -1,6 +1,6 @@
 import React from 'react'
 import Title from './Title'
-import {SiNextdotjs, SiReact, SiTailwindcss, SiTypescript} from 'react-icons/si'
+import {SiNextdotjs, SiReact, SiTailwindcss, SiTypescript, SiMongodb, SiShadcnui, SiAxios, SiAntdesign, SiRefine, SiGraphql,SiVite     } from 'react-icons/si'
 import Link from 'next/link'
 import { cn } from '@/utils/cn'
 import { DirectionAwareHover } from '@/components/ui/direction-aware-hover'
@@ -9,25 +9,25 @@ export default function Projects() {
 
     const projects = [
         {
-        title: "Zoom Clone",
-        tech: [SiReact, SiNextdotjs, SiTailwindcss, SiTypescript],
-        link: "http://localhost:3000",
+        title: "Nutrifuel Eccomerce",
+        tech: [SiNextdotjs, SiTailwindcss, SiShadcnui, SiTypescript, SiMongodb, SiAxios ],
+        link: "https://nutrifuel-ecommerce-r1pr29kq8-emmoscripts-projects.vercel.app/",
         cover: "/project-1.png",
-        background: "bg-indigo-500",
+        background: "bg-cyan-500",
         },
         {
-        title: "SAAS Platform",
-        tech: [SiReact, SiNextdotjs, SiTailwindcss, SiTypescript],
+        title: "Marketing Company Admin Dashboard",
+        tech: [SiRefine, SiVite,  SiAntdesign, SiGraphql, SiTypescript],
         link: "http://localhost:3000",
         cover: "/project-2.png",
         background: "bg-green-500",
         },
         {
-        title: "Project 3",
+        title: "SAAS Platform",
         tech: [SiReact, SiNextdotjs, SiTailwindcss, SiTypescript],
         link: "http://localhost:3000",
         cover: "/project-3.png",
-        background: "bg-cyan-500",
+        background: "bg-indigo-500",
         },
         {
         title: "Project 4",
@@ -35,20 +35,6 @@ export default function Projects() {
         link: "http://localhost:3000",
         cover: "/project-3.png",
         background: "bg-fuchsia-500",
-        },
-        {
-        title: "Project 5",
-        tech: [SiReact, SiNextdotjs, SiTailwindcss, SiTypescript],
-        link: "http://localhost:3000",
-        cover: "/project-3.png",
-        background: "bg-green-500",
-        },
-        {
-        title: "Project 6",
-        tech: [SiReact, SiNextdotjs, SiTailwindcss, SiTypescript],
-        link: "http://localhost:3000",
-        cover: "/project-3.png",
-        background: "bg-indigo-500",
         }
     ]
 
